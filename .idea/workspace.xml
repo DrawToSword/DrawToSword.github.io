@@ -20,8 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a744da24-b9fd-42af-82c5-1b8ff39045c8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/_data/cv_enable_section.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_data/cv_enable_section.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cv.html" beforeDir="false" afterPath="$PROJECT_DIR$/cv.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/cv_sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/cv_sidebar.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
