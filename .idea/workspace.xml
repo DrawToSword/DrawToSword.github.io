@@ -19,9 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a744da24-b9fd-42af-82c5-1b8ff39045c8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/_includes/cv_sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/cv_sidebar.html" afterDir="false" />
-    </list>
+    <list default="true" id="a744da24-b9fd-42af-82c5-1b8ff39045c8" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -78,9 +76,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="540" y="254" key="IDE.errors.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1631587854736" />
-    <state x="663" y="207" width="594" height="626" key="find.popup" timestamp="1631601280595">
+    <state x="663" y="207" width="594" height="626" key="find.popup" timestamp="1631602323720">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="663" y="207" width="594" height="626" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1631601280595" />
+    <state x="663" y="207" width="594" height="626" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1631602323720" />
   </component>
 </project>
