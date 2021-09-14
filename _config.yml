@@ -1,66 +1,32 @@
-# Site settings
-title: Hanuman
-description: Hanuman is a minimal yet powerful Jekyll theme for your blogs and websites.
-cover: assets/images/radhakrishna.jpg
-logo: assets/images/logo.png
-favicon: assets/images/favicon.png
-baseurl: "/hanuman/" # the subpath of your site, e.g. /blog/ or / for root
-url: "https://samanyougarg.com" # the base hostname & protocol for your site
+# Your Website Title
+title: Melvin Ch'ng
 
-pagination:
+# Your Website URL
+url: 'http://your-url.github.io'
 
-  # Site-wide kill switch, disabled here it doesn't run at all 
-  enabled: true
-
-  # Set to 'true' to enable pagination debugging. This can be enabled in the site config or only for individual pagination pages
-  debug: false
-
-  per_page: 5
-
-# Social
-facebook: facebook
-twitter: twitter
-github:  github
-
-#Additional Pages
-about: about
-contact: contact
-privacy-policy: privacy-policy
-
-
-permalink: /:title
-
+# Leave it default
+baseurl: '' 
 
 # Google Analytics
-analytics_id: ""
+ga_index: UA-XXXXXXXX-X
+ga_cv: UA-XXXXXXXX-X
 
-# Build settings
-markdown: kramdown
+# Index page and Profile Information
+name: Melvin Ch'ng
+tagline: Software Developer, IoT, Reverse Engineering
+pic: profile.png # profile.png can be found at /assets/images/profile.png
+description: Full Stack Developer, IoT, Reverse Engineering
+description_tiny: 'Home: +60-4 | Studied: +1-408 | Work: +60-3'
+email: you.email.email@gmail.com
+website: melvinchng.github.io # do not add http://
+linkedin: realmelvinchng
+github: melvinchng
+twitter: '@realmelvinchng'
 
-kramdown:
-  parse_block_html: true
+# Files or folders to be excluded
+exclude: [gitbook_source_code/]
 
+# All the plugins for Jekyll
 plugins:
-  - jekyll-paginate-v2
-
-
-# Settings for rake task
-safe: False
-lsi: False
-username: samanyougarg #github username
-repo: hanuman #github repository
-branch: master #branch
-relative_source: ../hanuman/ #source directory
-destination: ../hanuman-pages/ #destination directory
-production_url:  https://samanyougarg.com/
-source_url:  https://github.com/samanyougarg/hanuman #source repository url
-
-exclude:
-  - README.md
-  - Rakefile
-  - Gemfile
-  - Gemfile.lock
-  - changelog.md
-  - "*.Rmd"
-  - vendor
-  - .travis.yml
+  - jekyll-sitemap
+  - wdm

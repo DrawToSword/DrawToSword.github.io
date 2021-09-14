@@ -1,176 +1,92 @@
-# HANUMAN Jekyll Theme
+# Jekyll For Everyone
 
-[![Build Status](https://travis-ci.org/samanyougarg/hanuman.svg?branch=master)](https://travis-ci.org/samanyougarg/hanuman)
+Jekyll For Everyone is a package that is designed for everyone. The package contains three major components: homepage, CV, and [Gitbook](http://www.gitbook.com). The index page is a strip down version of [Jekyll Uno](https://github.com/joshgerdes/jekyll-uno) while the CV a modification of [Online CV](https://github.com/sharu725/online-cv). However, [Legacy Gitbook (v3.2.3)](https://github.com/GitbookIO/gitbook) is used instead of modern Gitbook (v4+). The main reason of using it is due to the fact that users can own their source code and edit them locally instead of doing it on the cloud. 
 
-Hanuman is a minimal yet powerful Jekyll theme for your blogs and websites.
+This package is very user friendly for non-programmer as I reorganized all the files and have all the variables written in several data files. This make it them to edit without needing to go into the actual code. 
 
-It is built using the open source [AMP Start framework](https://www.ampstart.com/) and can be customized as per your requirements.
+Big thanks to the theme creator as it this project would not be possible without their hard work! You are always welcome to contribute to this repository to make it better!
 
-<a href="https://www.buymeacoffee.com/samanyougarg"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" target="_blank"></a>
+**Story Behind The Project**
 
-## Live Demo
-## [Hanuman](https://samanyougarg.com/hanuman)
-![Hanuman](/Screenshots/hanuman.jpg "Hanuman Preview")
+The main purpose of this project is to allow everyone especially for non-programmer to own a website and platform to share their expertise without needing to worry about the cost of owning and maintaining their website. I heard from a lot of readers mentioning that they are in love with the simplicity of my website especially and would love to one one. They only reason that stops them from doing it is they do not have any programming experience and not a tech savvy. With that, this motivates me to write a complete tutorial on how to get started with [Jekyll](http://melvinchng.github.io/jekyll). 
 
+Also, as a fresh graduate, I see the importance of owning a personal website when it comes to job hunting. If you love this project and would like to support it, spread the message and keep the footer as in. 
+
+**Example Site**
+- My Personal Website
+  - [Melvin's landing page](https://melvinchng.github.io)
+  - [Melvin's CV](https://melvinchng.github.io/cv)
+  - [Melvin's Ruby on Rails Tuturial](https://melvinchng.github.io/rails)
+- Jekyll For Everyone Sample Website
+  - [Landing page](https://jekyll-for-everyone.github.io)
+  - [CV](https://jekyll-for-everyone.github.io/cv)
+  - [Gitbook](https://melvinchng.github.io/gitbook)
+
+_Note: The content in `jekyll-for-everyone` is for illustration purpose only. It may not contain accurate information._
 
 ## Features
-
-- Minimal
-- Responsive
-- Syntax Highlighting for code
-- Cover Images for homepage and blog posts
-- Social Sharing
-- Simple Navigation Menu
-- Pagination
-- Google Analytics
-- Can be easily installed via "theme gem"
-- Github Pages support
-- Easily Customisable
-- Tags
-- Multiple Authors
-
-## What is AMP
-
-AMP stands for [Accelerated Mobile Pages](https://www.ampproject.org/), a Google-backed project designed as an open standard for any publisher to have pages load quickly on mobile devices.
+### Index Page
+- Name
+- Title Line
+- Secondary Information Line
+- Links to social pages
+- Links to other pages
+### CV
+- Summary or Background
+- Education
+- Experiences
+- Individual Projects
+- Group Projects
+- Skill & Proficiency
+- Related Courses
+- Honors & Awards
+- Languages
+- Social Link
+- Volunteer Experiences
+### Gitbook
+- Sample Gitbook
 
 ## Installation
+### If you do not know what you are doing
+1. Refer to my [guide](http://melvinchng.github.io/jekyll). It contains single instructions that you need to follow to get started.
+### If you know what you are doing or somewhat know what to do
+**Jekyll**
+1. For first time user, you have to install Ruby and Rails. If you do not have Ruby installed, you may follow [this tutorial](http://melvinchng.github.io/rails/RubyOnRailsInstallation.html) that I wrote for Windows, Linux, and MacOS (installation videos are included).
+2. Install Jekyll by using the command `gem install jekyll`.
+3. Then, install Jekyll Sitemap and Jekyll SEO gems by using the command `gem install jekyll-sitemap` and `gem install wdm`.
+4. Start your localhost server by using the command `jekyll serve`. Make sure that you are at the root directory of your folder before using this command.
+5. Your site should be accessible at `localhost:4000`.
+6. For additional information about Jekyll, refer to the [official website](http://jekyllrb.com/). 
 
-There are different ways to install the theme -
+**Gitbook**
+1. For first time user, you have to Gitbook modules by using the command `npm install gitbook-cli -g`.
+2. Navigate to the root directory of the gitbook, `gitbook_source_code` and start the gitbook server using the command `gitbook serve`. 
+3. If there are missing some packages for gitbook, use the command `gitbook install`.
+4. Your site should be accessible at `localhost:4000`.
+5. For additional information about Gitbook, refer to the [official website](https://github.com/GitbookIO/gitbook). 
 
-### 1. Cloning the repository and updating settings
-1. Fork this repository and clone the forked repository.
-2. Update the _config.yml file as per your requirements.
-3. Add your posts to the _posts directory.
-4. Deploy to Github Pages or your own server.
+## How To Use
+### Index Page
+- The stylesheet, scripts, javascript for the index pages are stored at `/index_style/`.
+- The background picture for index page, named as `background-cover.jpg` can be found and replaced at `index_style/images`.
+- The profile picture for index page and cv page, named as `profile.png` can be found and replaced at `assets/images`.
+- All the data that shown in the index page are stored in `/_data/index_page.yml`. Replace all the content in the files.
 
-#### Deploying to Github Pages
-**Method 1**
+### CV
+- The stylesheet, scripts, javascript for the cv pages are stored at `/assets/`.
+- All the data that shown in the cv are stored in `/_data/cv_NAME.yml`. Replace all the content in the files.
+- If you would like to remove a specific section in the cv, change the variable from `true` to `false` for the variable in `/_data/cv_enable_section.yml`.
 
-Push the contents of the destination folder (mentioned in _config.yml. eg - destination: ../hanuman-pages/) to the gh-pages branch(if project page) or master branch(if user page) of your repository.
+### Gitbook
+- If you are not going to use the Gitbook feature, remove the `gitbook` folder.
+- The source code is stored at `/gitbook_source_code`
+- The content of generated book is coped from `/gitbook_source_code/_book` to `/gitbook`.
 
-**Method 2**
+### Other
+- If you would like to replace the website icon, you can use [this](https://favicon.io/) website to create one and replace the downloaded icon at `favicon.io`.
+- Update the variable in `/_config.yml`. Remember to replace the `url` variable with your actual URL.
+- If you would like to use Google Analytics, add your tracking number to `/_config.yml`.
 
-- Set up travis-ci for your fork.
-- Generate your secure token with the travis gem:
-  Run `gem install travis` on your terminal.
-- Grab the GH_TOKEN from https://github.com/settings/tokens
-- Then run `travis encrypt 'GIT_NAME="YOUR_USERNAME" GIT_EMAIL="YOUR_EMAIL" GH_TOKEN=YOUR_TOKEN'`
-- Add the token to your .travis.yml file.
-Now you just need to push the files. Travis will generate the HTML files and automatically push them to your gh-pages branch.
-This is the setup I am using.
+## Enjoy!
 
-### 2. Ruby Gem Method
-Add this line to your Jekyll site's `Gemfile`:
-
-```ruby
-gem "hanuman"
-```
-
-And add this line to your Jekyll site's `_config.yml`:
-
-```yaml
-theme: hanuman
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install hanuman
-
-You'll also need to copy or create the _config.yml file just like in this repository. Similarly, you'll need to have a navigation.yml and author.yml in your _data directory.
-
-#### Deploying to Github Pages
-Run `bundle exec jekyll serve` inside your cloned repository. Push the contents of the resulting _site to your Github Pages repository.
-
-
-### 3. Jekyll Remote Theme
-1. Create or update your Gemfile with the following -
-
-```ruby
-source "https://rubygems.org"
-gem "github-pages", group: :jekyll_plugins
-gem "jekyll-remote-theme"
-```
-
-2. Update the bundled gems using `bundle` command.
-
-3. Add `remote_theme: "hanuman"` to your `_config.yml`.
-
-4. Add `jekyll-remote-theme` to the plugins array of your `_config.yml` -
-
-```yaml
-plugins:
-  - jekyll-remote-theme
-```
-
-## Usage
-
-### _config.yml
-Update _config.yml with your respective settings like updating your site's name, description etc...
-
-### Styling
-AMP has a limitation that you can only use inline css.
-All the CSS for this theme is in the styles.scss file in the includes directory.
-
-#### Changing the Default Color
-In the styles.scss file in the includes directory, you can change the hex value of $theme-color to the color you would like your site to use.
-
-### Author Information
-Author information is present in the author.yml file in the _data folder. You can update the fields of that file as per your requirements.
-
-### Sidenav
-Sidenav can be updated from the navigation.yml file in the _data folder.
-
-## Writing Posts
-You can write posts just as you would in Jekyll, the only difference being that AMP has some strict guidelines on including external content.
-
-You cannot use Markdown format or normal HTML tags. AMP provides its own custom tags for images, videos etc...
-
-### Examples -
-
-**Images**
-`<amp-img src="welcome.jpg" alt="Welcome" height="400" width="800"></amp-img>`
-
-**Videos**
-`<amp-youtube data-videoid="mGENRKrdoGY" layout="responsive" width="480" height="270"></amp-youtube>`
-
-[See Full AMP Documentation.](https://www.ampproject.org/docs/)
-
-### Using AMP Components
-Some AMP components require you to specify external scripts before using them.
-You can specify these scripts in the head.html file in the includes directory after the already imported scripts and then use these components in any post.
-
-## Validating your page with AMP
-AMP provides built-in validator to validate your pages so that they can rendered quickly.
-
-You can access this validator by opening the Developer Console in your browser and adding #development=1 to any url of your site.
-
-Example -
-http://localhost:4000/#development=1
-
-If you have errors on your page, AMP will list those for you in the console. If you do not have any errors, you'll get a message "AMP Validation Successful" on your console.
-
-## Enabling Google Analytics
-1. Set up your Analytics Tracking ID in _config.yml.
-2. Remove {% comment %} and {% endcomment %} tags in the default.html file in layouts directory.
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/samanyougarg/hanuman. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
-
-To submit a pull request -
-
-1. Fork/clone the repository.
-2. Develop.
-3. Create a new branch from the master branch.
-4. Open a pull request on Github describing what was fixed or added.
-
-## Thanks
-Hanuman is based on [amplify](https://github.com/ageitgey/amplify) jekyll theme. Thank You.
-
-## License
-
-The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+As a reminder, if you love this project and would like to support it, spread the message and keep the footer as in. 
