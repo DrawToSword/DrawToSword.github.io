@@ -28,3 +28,11 @@ layout: cv_layout
   {% if site.data.cv_enable_section.volunteers == true %}
     {% include cv_volunteer.html %}
   {% endif %}
+
+  {% if site.data.cv_enable_section.languages == true %}
+    {% include cv_languages.html %}
+  {% endif %}
+
+  {% if site.data.cv_enable_section.education == true %}
+    {% include cv_education.html %}
+  {% endif %}
