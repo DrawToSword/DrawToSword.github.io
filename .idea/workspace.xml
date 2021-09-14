@@ -20,7 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a744da24-b9fd-42af-82c5-1b8ff39045c8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/_data/index_links.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_data/index_links.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_data/cv_enable_section.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_data/cv_enable_section.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,9 +78,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="540" y="254" key="IDE.errors.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1631587854736" />
-    <state x="663" y="207" width="594" height="626" key="find.popup" timestamp="1631591595098">
+    <state x="663" y="207" width="594" height="626" key="find.popup" timestamp="1631601280595">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="663" y="207" width="594" height="626" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1631591595098" />
+    <state x="663" y="207" width="594" height="626" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1631601280595" />
   </component>
 </project>
