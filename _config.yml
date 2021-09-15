@@ -33,10 +33,9 @@ twitter:
   card: summary
 logo: logo.png
 social:
-  name: Songzi Vong
+  name: Hom Wuu
   links:
-    - https://twitter.com/vszhub
-    - https://github.com/vszhub
+    - https://github.com/DrawToSword/
 google_site_verification: xxxxx
 lang: en
 
@@ -54,6 +53,6 @@ sass:
 
 # Specify the author for blog posts
 author:
-  name: Songzi Vong
-  url: https://github.com/vszhub/
-  email: vszhub@gmail.com
+  name: Hom Wuu
+  url: https://github.com/DrawToSword/
+  email: wu_hom910428@163.com
