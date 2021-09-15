@@ -1,11 +1,11 @@
 # Setup
-title: Not Pure Poole
-description: A simple, beautiful, and powerful Jekyll theme for blogs
-url: https://vszhub.github.io
-avatar: /avatar.jpeg
+title: Hom Wuu
+description: A junk programmer of java
+url: https://drawtosword.github.io
+avatar: /portrait.png
 paginate: 5
 permalink: pretty
-cover_image: /bg.jpeg
+cover_image: /butterfly.jpeg
 
 # Gems
 plugins:
